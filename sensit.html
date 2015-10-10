@@ -1,0 +1,45 @@
+<script type="text/javascript">
+    RED.nodes.registerType('sensit',{
+        category: 'advanced',
+        color: '#C0DEED',
+        defaults: {
+            name: {value: ""},
+            token: {value: "", required: true},
+            deviceId: {value: ""},
+            sensorType: {value: "temperature", required: true}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "sensit.png",
+        label: function() {
+            return this.name || "sensit";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="sensit">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Sens'it Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-token"><i class="icon-tag"></i> Token</label>
+        <input type="text" id="node-input-token" placeholder="Sens'it Access Token">
+    </div>
+    <div class="form-row">
+        <label for="node-input-deviceId"><i class="icon-tag"></i> DeviceId</label>
+        <input type="text" id="node-input-deviceId" placeholder="Sens'it DeviceId (Optional)">
+    </div>
+    <div class="form-row">
+        <label for="node-input-sensorType">Sensor Type</label>
+        <select id="node-input-sensorType">
+            <option>temperature</option>
+            <option>motion</option>
+            <option>button</option>
+        </select>
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="sensit">
+    <p>A simple node that connect to the Sens'it API.</p>
+</script>

@@ -1,0 +1,31 @@
+{
+  "name": "node-red-contrib-sensit",
+  "version": "0.0.0",
+  "description": "Node-RED node for Sens'it",
+  "main": "sensit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjo/node-red-contrib-sensit.git"
+  },
+  "keywords": [
+    "node-red",
+    "sensit"
+  ],
+  "node-red": {
+    "nodes": {
+      "sensit": "sensit.js"
+    }
+  },
+  "author": "Victor Jolissaint",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vjo/node-red-contrib-sensit/issues"
+  },
+  "homepage": "https://github.com/vjo/node-red-contrib-sensit#readme",
+  "dependencies": {
+    "node-sensit": "^1.0.1"
+  }
+}
