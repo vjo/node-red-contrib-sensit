@@ -17,7 +17,7 @@ A simple [Node-RED](http://nodered.org) node that connect to the [Sens'it](http:
 ```json
 {
       "payload": {
-          "data": "sensorData",
+          "data": "sensor value",
           "date": "date"
       }
 }
